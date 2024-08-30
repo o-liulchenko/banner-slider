@@ -1,7 +1,7 @@
 import { anime, animeList } from "./staticData";
 
 const api = {
-    async getMainPageAnime():Promise<anime[]>{
+    getMainPageAnime():anime[]{
         return animeList
     }
 }
