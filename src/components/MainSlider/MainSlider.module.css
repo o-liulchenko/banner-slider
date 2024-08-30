@@ -1,0 +1,56 @@
+.sliderWrapper{
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+.sliderContainer{
+    width: 100%;
+    height: 100%;
+
+}
+.slide{
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0;
+}
+.slide::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, white 1%, transparent);
+    
+}
+.slideImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.slideDescription{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 100%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 5;
+}
+.h3{
+    font-weight: 700;
+    font-size: 96px;
+    color: white;
+}
+.active{
+    opacity: 1;
+}
+
+.sliderControls{
+    z-index: 99;
+    top: -50px;
+}
